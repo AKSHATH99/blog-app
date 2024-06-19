@@ -9,12 +9,13 @@ import EditPost from './pages/Editpost.js'
 import Profile from './pages/Profile.js'
 import Mypost from './pages/Mypost.js'
 import {Route , Routes } from 'react-router-dom'
+import Navbar from './components/Navbar.js';
 
 function App() {
   return (
     <>
     <Routes>
-      <Route exact path = '/' element = {<Home/>}/>
+      <Route exact path = '/' element = {<Navbar/>}/>
       <Route exact path = '/login' element = {<Login/>}/>
       <Route exact path = '/register' element = {<Register/>}/>
       <Route exact path = '/write' element = {<Createpost/>}/>
