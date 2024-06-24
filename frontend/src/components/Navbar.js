@@ -3,14 +3,15 @@ import {Link, useLocation, useNavigate, useNavigation} from "react-router-dom"
 import { FaSearch } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import Menu from './Menu'
+import { UserContext } from '../context/UserContext';
 
 const Navbar = () => {
     const [promt , setpromt] = useState("")
     const [menu  , setMenu] = useState(false)
     const navigate = useNavigate();
     const path = useLocation().pathname
-
-    const showmenu = ()=>{
+    console.log("navbar running")
+    const showMenu = ()=>{
         setMenu(!menu);
     }
 

@@ -2,12 +2,12 @@ import React from 'react'
 import { useContext } from 'react'
 import {UserContext} from "../context/UserContext.js"
 import axios from 'axios';
-import {Link, NavLink, useNavigator} from "react-router-dom";  
+import {Link, NavLink, useNavigate} from "react-router-dom";  
 
 const Menu = () => {
     const {user} = useContext(UserContext);
     const  {setUser} = useContext(UserContext);
-    const navigate = useNavigator();
+    const navigate = useNavigate();
 
     const handleLogout = async() => {
         try {
