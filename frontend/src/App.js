@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './pages/Home.js';
+// import Home from './pages/Home.js';
+import Home from './components/Home.js';
 import Login from './pages/Login.js';
 import Register from './pages/Register.js';
 import Createpost from './pages/Createpost.js';
@@ -16,7 +17,7 @@ function App() {
   return (
     <UserContextProvider>
     <Routes>
-      <Route exact path = '/' element = {<Navbar/>}/>
+      <Route exact path = '/' element = {<Home/>}/>
       <Route exact path = '/login' element = {<Login/>}/>
       <Route exact path = '/register' element = {<Register/>}/>
       <Route exact path = '/write' element = {<Createpost/>}/>

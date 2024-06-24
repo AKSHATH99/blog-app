@@ -10,13 +10,13 @@ const Navbar = () => {
     const [menu  , setMenu] = useState(false)
     const navigate = useNavigate();
     const path = useLocation().pathname
-    console.log("navbar running")
     const showMenu = ()=>{
         setMenu(!menu);
     }
 
     const {user} = useContext(UserContext) 
   return (
+    
     <div>
       <div className='flex items-center justify-center px-6 md:px-[200px] py-4  bg-black text-white'>
         <h1 className='text-lg md:text-xl font-extrabold '>
